@@ -512,6 +512,16 @@ margin-bottom: 16px;
     left: 0;
     background-color: rgba(46, 47, 66, 0.40);
     z-index: 9999;
+    /* opacity: 0;
+    visibility: hidden;
+    pointer-events: none; */
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visability 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 /* ============== MODAL WINDOW STYLES ============== */
@@ -520,9 +530,150 @@ margin-bottom: 16px;
     width: 408px;
     height: 584px;
     border-radius: 4px;
-    background: #FCFCFC;
+    background-color: #FCFCFC;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 72px 24px 24px 24px;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    stroke: #E7E9FC;
+    line-height: 0;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    stroke: #404BBF;
+}
+
+.leave-your-contacts {
+    color:#2E2F42;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    width: 360px;
+    height: 24px;
+    margin-bottom: 16px;
+}
+
+.input-name {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #2E2F4266;
+    height: 40px;
+    flex-shrink: 0;
+    background-color: transparent;
+    padding-left: 38px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: 0px solid transparent;
+}
+
+.input-name:focus {
+    border-color: #4D5AE5;
+}
+
+.input-name:focus + .input-svg-icon {
+    fill: #4D5AE5;
+}
+
+.label-name {
+    color:#8E8F99;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    display: flex;
+    margin-bottom: 4px;
+}
+
+.leave-your-name {
+    padding-bottom: 26px;
+}
+
+.div-input-svg {
+    position: relative;
+}
+
+.input-svg-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    color: #4D5AE5;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea-comment {
+    width: 100%;
+    height: 120px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    resize: none;
+    padding-top: 8px;
+    padding-left: 16px;
+    border-color: #2E2F4266;
+    outline: 0px solid transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: rgba(46, 47, 66, 0.40);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+
+.textarea-comment::placeholder {
+    color: rgba(46, 47, 66, 0.40);
+}
+
+.textarea-comment:focus {
+    border-color: #4D5AE5;
+}
+
+.span-custom-checkbox {
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    stroke-width: 1px;
+    stroke: rgba(46, 47, 66, 0.40);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.label-span-checkbox-click {
+    opacity: 0;
+}
+
+.checkbox-privacy-policy:checked + .label-checkbox-privacy-policy > .span-custom-checkbox {
+    background-color: #404BBF;
+    border-color: #404BBF;
+    border-radius: 4px;
+}
+
+.checkbox-privacy-policy:focus + .label-checkbox-privacy-policy > .span-custom-checkbox {
+    outline: 2px solid #404BBF;
+}   
+
+.checkbox-privacy-policy:checked + .label-checkbox-privacy-policy .label-span-checkbox-click {
+    opacity: 1;
+}
+
+.label-checkbox-privacy-policy {
+    color: #8E8F99;
+font-size: 12px;
+font-weight: 400;
+letter-spacing: 0.04em;
+}
+
+.div-checkbox {
+    padding-bottom: 16px;
 }
