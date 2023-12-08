@@ -637,8 +637,9 @@ margin-bottom: 16px;
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-    stroke: #404BBF;
+    background-color: #404BBF;
     border: none;
+    fill: #ffffff;
 }
 
 .modal-close-btn-icon {
@@ -683,13 +684,13 @@ margin-bottom: 16px;
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    display: flex;
+    display: block;
     margin-bottom: 4px;
 }
 
 .leave-your-name {
     padding-bottom: 26px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .div-input-svg {
@@ -711,8 +712,7 @@ margin-bottom: 16px;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
     resize: none;
-    padding-top: 8px;
-    padding-left: 16px;
+    padding: 8px 16px; 
     border-color: #2E2F4266;
     outline: 0px solid transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -720,6 +720,8 @@ margin-bottom: 16px;
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.04em;
+    line-height: 1.17;
+    background-color: transparent;
 }
 
 .textarea-comment::placeholder {
@@ -742,6 +744,10 @@ margin-bottom: 16px;
 
 .label-span-checkbox-click {
     opacity: 0;
+}
+
+.div-checkbox {
+    margin-bottom: 24px;
 }
 
 .checkbox-privacy-policy:checked + .label-checkbox-privacy-policy > .span-custom-checkbox {
