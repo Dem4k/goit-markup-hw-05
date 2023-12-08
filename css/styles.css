@@ -566,11 +566,10 @@ margin-bottom: 16px;
 }
 
 .paper-plane-svg {
-    margin-left: 16px;
     position: relative;
 }
 
-.footer-form {
+.form-footer-sub {
     display: flex;
     gap: 24px;
 }
