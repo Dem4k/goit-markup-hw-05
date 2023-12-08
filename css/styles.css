@@ -570,6 +570,10 @@ margin-bottom: 16px;
     position: relative;
 }
 
+.footer-form {
+    display: flex;
+    gap: 24px;
+}
 
 /* ============== BACKDROP STYLES ============== */
 
