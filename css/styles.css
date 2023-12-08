@@ -551,7 +551,7 @@ margin-bottom: 16px;
     gap: 16px;
     border-radius: 4px;
     background-color: #4D5AE5;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     color: #FFF;
     text-align: center;
@@ -567,12 +567,12 @@ margin-bottom: 16px;
 
 .paper-plane-svg {
     position: relative;
+    margin-left: 16px;
 }
 
 .form-footer-sub {
     display: flex;
     gap: 24px;
-    flex-direction: row;
 }
 
 /* ============== BACKDROP STYLES ============== */
