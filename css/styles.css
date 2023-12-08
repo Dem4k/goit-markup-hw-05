@@ -572,6 +572,7 @@ margin-bottom: 16px;
 .form-footer-sub {
     display: flex;
     gap: 24px;
+    flex-direction: row;
 }
 
 /* ============== BACKDROP STYLES ============== */
