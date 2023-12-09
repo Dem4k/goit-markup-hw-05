@@ -739,7 +739,12 @@ margin-bottom: 16px;
     stroke-width: 1px;
     stroke: rgba(46, 47, 66, 0.40);
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
 }
 
 .label-span-checkbox-click {
@@ -769,6 +774,7 @@ margin-bottom: 16px;
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.04em;
+    line-height: 1.17;
 }
 
 .send-button {
