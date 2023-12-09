@@ -694,6 +694,7 @@ margin-bottom: 16px;
 
 .div-input-svg {
     position: relative;
+    margin-bottom: 16px;
 }
 
 .input-svg-icon {
@@ -758,6 +759,8 @@ margin-bottom: 16px;
     background-color: #404BBF;
     border-color: #404BBF;
     border-radius: 4px;
+    border: none;
+    fill: #F4F4FD;
 }
 
 .checkbox-privacy-policy:focus + .label-checkbox-privacy-policy > .span-custom-checkbox {
@@ -766,8 +769,6 @@ margin-bottom: 16px;
 
 .checkbox-privacy-policy:checked + .label-checkbox-privacy-policy .label-span-checkbox-click {
     opacity: 1;
-    border: none;
-    fill: #F4F4FD;
 }
 
 .label-checkbox-privacy-policy {
