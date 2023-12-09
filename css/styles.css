@@ -766,6 +766,8 @@ margin-bottom: 16px;
 
 .checkbox-privacy-policy:checked + .label-checkbox-privacy-policy .label-span-checkbox-click {
     opacity: 1;
+    border: none;
+    fill: #F4F4FD;
 }
 
 .label-checkbox-privacy-policy {
@@ -800,4 +802,8 @@ margin-bottom: 16px;
 
 .send-button:hover {
     background-color: #404BBF;
+}
+
+.privacy-policy-a {
+    color: #4d5ae5;
 }
